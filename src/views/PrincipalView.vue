@@ -271,7 +271,7 @@ const eliminarTarea = (id) => {
       "¿Seguro que deseas eliminar esta tarea?, esta accion no se puede deshacer."
     )
   ) {
-    const index = tareas.value.fiscriptx((t) => t.id === id);
+    const index = tareas.value.findIndex((t) => t.id === id);
     if (index !== -1) tareas.value.splice(index, 1);
   }
 };
